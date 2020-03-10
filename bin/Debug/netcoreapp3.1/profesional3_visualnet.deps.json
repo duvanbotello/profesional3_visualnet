@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "profesional3_visualnet/1.0.0": {
+        "runtime": {
+          "profesional3_visualnet.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "profesional3_visualnet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

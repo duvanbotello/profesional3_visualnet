@@ -1,0 +1,11 @@
+/home/duvan/Documents/profesional3/profesional3_visualnet/bin/Debug/netcoreapp3.1/profesional3_visualnet
+/home/duvan/Documents/profesional3/profesional3_visualnet/bin/Debug/netcoreapp3.1/profesional3_visualnet.deps.json
+/home/duvan/Documents/profesional3/profesional3_visualnet/bin/Debug/netcoreapp3.1/profesional3_visualnet.runtimeconfig.json
+/home/duvan/Documents/profesional3/profesional3_visualnet/bin/Debug/netcoreapp3.1/profesional3_visualnet.runtimeconfig.dev.json
+/home/duvan/Documents/profesional3/profesional3_visualnet/bin/Debug/netcoreapp3.1/profesional3_visualnet.dll
+/home/duvan/Documents/profesional3/profesional3_visualnet/bin/Debug/netcoreapp3.1/profesional3_visualnet.pdb
+/home/duvan/Documents/profesional3/profesional3_visualnet/obj/Debug/netcoreapp3.1/profesional3_visualnet.csprojAssemblyReference.cache
+/home/duvan/Documents/profesional3/profesional3_visualnet/obj/Debug/netcoreapp3.1/profesional3_visualnet.AssemblyInfoInputs.cache
+/home/duvan/Documents/profesional3/profesional3_visualnet/obj/Debug/netcoreapp3.1/profesional3_visualnet.AssemblyInfo.cs
+/home/duvan/Documents/profesional3/profesional3_visualnet/obj/Debug/netcoreapp3.1/profesional3_visualnet.dll
+/home/duvan/Documents/profesional3/profesional3_visualnet/obj/Debug/netcoreapp3.1/profesional3_visualnet.pdb
