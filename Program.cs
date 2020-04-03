@@ -84,6 +84,240 @@ namespace profesional3_visualnet
             }
         }
 
+        static void codicionalswitch1(){
+            Console.Write("Ingrese un valor entre 1 y 5:");
+            int valor = int.Parse(Console.ReadLine());
+            switch (valor)
+            {
+                case 1: Console.Write("uno");
+                        break;
+                case 2: Console.Write("dos");
+                        break;
+                case 3: Console.Write("tres");
+                        break;
+                case 4: Console.Write("cuatro");
+                        break;
+                case 5: Console.Write("cinco");
+                        break;
+                default:
+                        Console.Write("Se ingreso un valor fuera de rango");
+                        break;
+            }
+            Console.ReadKey();
+        }
+
+        static void codicionalswitch2(){
+            Console.Write("Ingrese un número en castellano entre uno y cinco:");
+            string nro = Console.ReadLine();
+            switch (nro)
+            {
+                case "uno": Console.Write(1);
+                            break;
+                case "dos": Console.Write(2);
+                            break;
+                case "tres": Console.Write(3);
+                            break;
+                case "cuatro": Console.Write(4);
+                            break;
+                case "cinco": Console.Write(5);
+                            break;
+                default: Console.Write("Debe ingresar un valor entre uno y cinco");
+                            break;
+            }
+            Console.ReadKey();
+        }
+
+
+
+        static void ciclowhile1(){
+            int suma,f,valor,promedio;
+            string linea;
+            suma=0;
+            for(f=1;f<=10;f++) 
+            {
+                Console.Write("Ingrese valor:");
+                linea=Console.ReadLine();
+                valor=int.Parse(linea);
+                suma=suma+valor;
+            }
+            Console.Write("La suma es:");
+            Console.WriteLine(suma);
+            promedio=suma/10;
+            Console.Write("El promedio es:");
+            Console.Write(promedio);
+            Console.ReadKey();
+        }
+
+        static void ciclowhile2(int x){
+            while (x <= 100)
+            {
+            Console.Write(x);
+            Console.Write(" - ");
+            x = x + 1;
+            }
+        }
+
+        staic void ciclowhile2(){
+            int x,suma,valor,promedio;
+            string linea;
+            x=1;
+            suma=0;
+            while (x<=10) 
+            {
+                Console.Write("Ingrese un valor:");
+                linea = Console.ReadLine();
+                valor=int.Parse(linea);
+                suma=suma+valor;
+                x=x+1;
+            }
+            promedio=suma/10;
+            Console.Write("La suma de los 10 valores es:");
+            Console.WriteLine(suma);
+            Console.Write("El promedio es:");
+            Console.Write(promedio);
+            Console.ReadKey();
+        }
+
+        static void ciclofor3(int suma, int f, int valor, int promedio){
+
+            string linea = "";
+            suma=0;
+            for(f=1;f<=10;f++) 
+            {
+                Console.Write("Ingrese valor:");
+                linea=Console.ReadLine();
+                valor=int.Parse(linea);
+                suma=suma+valor;
+            }
+            Console.Write("La suma es:");
+            Console.WriteLine(suma);
+            promedio=suma/10;
+            Console.Write("El promedio es:");
+            Console.Write(promedio);
+            Console.ReadKey();
+        }
+
+        static void ciclofor4(int aprobados, int reprobados, int f, int nota){
+            string linea;
+            aprobados=0;
+            reprobados=0;
+            for(f=1;f<=10;f++) 
+            {
+                Console.Write("Ingrese la nota:");
+                linea = Console.ReadLine();
+                nota=int.Parse(linea);
+                if (nota>=7) 
+                {
+                    aprobados=aprobados+1;
+                }
+                else
+                {
+            	    reprobados=reprobados+1;
+                }
+            }
+            Console.Write("Cantidad de aprobados:");
+            Console.WriteLine(aprobados);
+            Console.Write("Cantidad de reprobados:");
+            Console.Write(reprobados);
+            Console.ReadKey();
+        }
+
+        static void ciclodowhile1(){
+             int valor;
+            string linea;
+            do {
+                Console.Write("Ingrese un valor entre 0 y 999 (0 finaliza):");
+                linea = Console.ReadLine();
+                valor=int.Parse(linea);
+                if (valor>=100) 
+                {
+                    Console.WriteLine("Tiene 3 dígitos.");
+                } 
+                else
+                {
+                    if (valor>=10) 
+                    {
+                        Console.WriteLine("Tiene 2 dígitos.");
+                    } 
+                    else 
+                    {
+                        Console.WriteLine("Tiene 1 dígito.");
+                    }
+                }
+            } while (valor!=0);
+        }
+
+        static void ciclodowhile2(){
+            int suma,cant,valor,promedio;
+            string linea;
+            suma=0;
+            cant=0;
+            do {
+                Console.Write("Ingrese un valor (0 para finalizar):");
+                linea = Console.ReadLine();
+                valor=int.Parse(linea);
+                if (valor!=0) {
+                    suma=suma+valor;
+                    cant++;
+                }
+            } while (valor!=0);
+            if (cant!=0) {
+                promedio=suma/cant;
+                Console.Write("El promedio de los valores ingresados es:");
+                Console.Write(promedio);
+            } else {
+                Console.Write("No se ingresaron valores.");
+            }
+            Console.ReadLine();
+        }
+
+
+        static void ciclodowhile3(){
+            int cant1,cant2,cant3,suma;
+            float peso;
+            string linea;
+            cant1=0;
+            cant2=0;
+            cant3=0;
+            do {
+                Console.Write("Ingrese el peso de la pieza (0 pera finalizar):");
+                linea = Console.ReadLine();
+                peso=float.Parse(linea);
+                if (peso>10.2) 
+                {
+                    cant1++;
+                }
+                else 
+                {
+                    if (peso>=9.8)
+                    {
+                        cant2++;
+                    }
+                    else 
+                    {
+                        if (peso>0) 
+                        {
+                            cant3++;
+                        }
+                    }
+                }
+            } while(peso!=0);
+            suma=cant1+cant2+cant3;
+            Console.Write("Piezas aptas:");
+            Console.WriteLine(cant2);
+            Console.Write("Piezas con un peso superior a 10.2:");
+            Console.WriteLine(cant1);
+            Console.Write("Piezas con un peso inferior a 9.8:");
+            Console.WriteLine(cant3);
+            Console.ReadLine();
+        }
+
+
+
+
+
+        
+
 
        
     }
